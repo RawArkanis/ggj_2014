@@ -110,6 +110,7 @@ MonoBehaviour:
   CrateSmall: {fileID: 100000, guid: 597ded1d9769ea94186588a5d156b636, type: 2}
   Switch: {fileID: 100002, guid: bff86dee328d45e43acc2328af2181e5, type: 2}
   TrapDoor: {fileID: 100012, guid: fb6c9d9dd9c9ec142a848d458bb32183, type: 2}
+  Elevator: {fileID: 100002, guid: 9caabc2cd125b794bbfdf0278816ab02, type: 2}
   allSprites:
   - {fileID: 21300000, guid: 234798985cdd04b408a279937ddf0131, type: 3}
   - {fileID: 21300002, guid: 234798985cdd04b408a279937ddf0131, type: 3}

@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 public class MapMasterScript : MonoBehaviour
 {
 
-    public const string MAP_PATH = "Assets/Maps/";
+    public const string MAP_PATH = "/Maps/";
 
     public GameObject CollisionBlock;
     public GameObject Player;
@@ -17,6 +17,7 @@ public class MapMasterScript : MonoBehaviour
 	public GameObject CrateSmall;
 	public GameObject Switch;
 	public GameObject TrapDoor;
+	public GameObject Elevator;
 
 	public Sprite[] allSprites;
 
@@ -51,6 +52,8 @@ public class MapMasterScript : MonoBehaviour
 		public string name { get; set; }
 		public string type { get; set; }
 
+		public string extra { get; set; }
+
         public object properties { get; set; }
 	}
 	
@@ -62,10 +65,10 @@ public class MapMasterScript : MonoBehaviour
 
     public void Load(string fileName)
     {
-        using (StreamReader reader = new StreamReader(MAP_PATH + fileName))
+        using (StreamReader reader = new StreamReader(Application.dataPath + MAP_PATH + fileName))
         {
             string json = reader.ReadToEnd();
-
+			Debug.Log ("json: " + json);
             var map = JsonConvert.DeserializeObject<MapJSON>(json);
 
             GenerateMap(map);
@@ -154,8 +157,8 @@ public class MapMasterScript : MonoBehaviour
 								x = obj.x / 32 * blocksize.x;
 								y = obj.y / 32 * blocksize.y;
 								
-//								switches[switches.Length] = (GameObject) Instantiate(Switch, new Vector3(x, -y, 0), Quaternion.identity);
 								switchObj = (GameObject) Instantiate(Switch, new Vector3(x, -y, 0), Quaternion.identity);
+								switchObj.name = obj.name;
 								switches[switchCount] = new SwitchRelationObject();
 								switches[switchCount].objSwitch = switchObj;
 								switches[switchCount].targets = obj.name.Split(',');
@@ -168,6 +171,16 @@ public class MapMasterScript : MonoBehaviour
 								switchObj = (GameObject) Instantiate(TrapDoor, new Vector3(x, -y, 0), Quaternion.identity);
 								switchObj.name = obj.name;
 								break;
+							case "elevador":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+								switchObj = (GameObject) Instantiate(Elevator, new Vector3(x, -y, 0), Quaternion.identity);
+								switchObj.name = obj.name;
+								//Debug.Log("From Y: " + (obj.y / 32) + ", to Y: " + (int.Parse(obj.extra) / 32));
+								Elevator ele = switchObj.GetComponent<Elevator>();
+								ele.setMaxY((int)(obj.y / 32) - (int)(int.Parse(obj.extra) / 32));
+								break;
 							default:
 								Debug.Log("Ainda nao tem implementado objeto do tipo: " + obj.type);
 								break;
@@ -179,14 +192,15 @@ public class MapMasterScript : MonoBehaviour
 						if(g == null) continue;
 
 						int switchTargetIndex = 0;
-						int targetNameIndex = 1;
+//						int targetNameIndex = 1;
 						
-						for (int i = 0; i < g.targets.Length-1; i++)
+						for (int i = 1; i < g.targets.Length; i++)
 						{
+							Debug.Log ("Relations for switch.name: " + g.objSwitch.name + ": " + g.targets[i]);
 							Switch _s = g.objSwitch.GetComponent<Switch>();
-							_s.targets[0] = GameObject.Find(g.targets[1]);
+							_s.targets[switchTargetIndex] = GameObject.Find(g.targets[i]);
 							switchTargetIndex++;
-							targetNameIndex++;
+//							targetNameIndex++;
 						}
 					}
                 }
