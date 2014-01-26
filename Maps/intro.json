@@ -1,117 +1,61 @@
-{ "height":5,
+{ "height":7,
  "layers":[
         {
-         "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-         "height":5,
+         "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+         "height":7,
          "name":"Collision",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":20,
+         "width":19,
          "x":0,
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32, 31, 0, 0, 0, 0, 28, 27, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 2, 58, 63, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 11, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         "height":5,
+         "data":[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 4, 2, 4, 3, 5, 2, 4, 5, 3, 3, 2, 2, 3, 4, 4, 2, 3, 3, 5, 2, 28, 30, 29, 17, 30, 18, 30, 18, 30, 29, 30, 29, 18, 18, 17, 30, 31, 3, 3, 62, 0, 37, 38, 0, 69, 70, 0, 0, 37, 77, 78, 37, 0, 0, 0, 65, 3, 3, 26, 33, 43, 44, 45, 75, 76, 23, 12, 23, 83, 84, 23, 12, 11, 23, 25, 2, 5, 3, 3, 2, 4, 4, 3, 2, 2, 3, 3, 5, 4, 2, 5, 3, 4, 2, 4, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6],
+         "height":7,
          "name":"Foreground",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":20,
+         "width":19,
          "x":0,
          "y":0
         }, 
         {
-         "height":5,
+         "height":7,
          "name":"Objects",
          "objects":[
                 {
                  "height":32,
-                 "name":"Player",
+                 "name":"end",
                  "properties":
                     {
 
                     },
-                 "type":"",
+                 "type":"end",
+                 "visible":true,
+                 "width":32,
+                 "x":512,
+                 "y":128
+                }, 
+                {
+                 "height":32,
+                 "name":"player",
+                 "properties":
+                    {
+
+                    },
+                 "type":"player",
                  "visible":true,
                  "width":32,
                  "x":32,
-                 "y":96
-                }, 
-                {
-                 "height":32,
-                 "name":"Door",
-                 "properties":
-                    {
-
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":352,
-                 "y":96
-                }, 
-                {
-                 "height":32,
-                 "name":"Switch",
-                 "properties":
-                    {
-                     "open":"Door01, Door02"
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":256,
-                 "y":96
-                }, 
-                {
-                 "height":32,
-                 "name":"Door",
-                 "properties":
-                    {
-
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":448,
-                 "y":96
-                }, 
-                {
-                 "height":64,
-                 "name":"Shadow",
-                 "properties":
-                    {
-                     "drop":"",
-                     "silhouette":"Type05",
-                     "type":"Enemy"
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":544,
-                 "y":64
-                }, 
-                {
-                 "height":64,
-                 "name":"Shadow",
-                 "properties":
-                    {
-                     "drop":"Doll",
-                     "silhouette":"Type02",
-                     "type":"Item"
-                    },
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":128,
-                 "y":64
+                 "y":128
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":20,
+         "width":19,
          "x":0,
          "y":0
         }],
@@ -124,8 +68,8 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"Tilesets\/Collision.png",
-         "imageheight":414,
+         "image":"..\/Maps\/Maps\/Tilesets\/Collision.png",
+         "imageheight":480,
          "imagewidth":192,
          "margin":0,
          "name":"Collision",
@@ -140,5 +84,5 @@
         }],
  "tilewidth":32,
  "version":1,
- "width":20
+ "width":19
 }

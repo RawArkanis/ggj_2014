@@ -9,8 +9,16 @@ public class MapMasterScript : MonoBehaviour
 
     public const string MAP_PATH = "Assets/Maps/";
 
-    public GameObject CollisioBlock;
+    public GameObject CollisionBlock;
     public GameObject Player;
+	public GameObject End;
+	public GameObject ForeGroundSprite;
+	public GameObject CrateBig;
+	public GameObject CrateSmall;
+	public GameObject Switch;
+	public GameObject TrapDoor;
+
+	public Sprite[] allSprites;
 
     private class MapJSON
     {
@@ -40,10 +48,17 @@ public class MapMasterScript : MonoBehaviour
         public float width { get; set; }
         public float height { get; set; }
 
-        public string name { get; set; }
+		public string name { get; set; }
+		public string type { get; set; }
 
         public object properties { get; set; }
-    }
+	}
+	
+	private class SwitchRelationObject
+	{
+		public GameObject objSwitch { get; set; }
+		public string[] targets { get; set; }
+	}
 
     public void Load(string fileName)
     {
@@ -58,11 +73,13 @@ public class MapMasterScript : MonoBehaviour
     }
 
     private void GenerateMap(MapJSON map)
-    {
+	{
+		var blocksize = ((BoxCollider2D) CollisionBlock.collider2D).size;
+		float x;
+		float y;
         foreach (var layer in map.layers)
         {
-            // For a TileLayer
-            if (layer.type.Equals("tilelayer"))
+			if (layer.type.Equals("tilelayer"))// For a TileLayer
             {
                 if (layer.name.Equals("Collision"))
                 {
@@ -70,59 +87,110 @@ public class MapMasterScript : MonoBehaviour
                     {
                         if (layer.data[i] == 1) // If is a Collision Tile
                         {
-                            var size = ((BoxCollider2D)CollisioBlock.collider2D).size;
+							x = (i % layer.width) * blocksize.x;
+							y = (i / layer.width) * blocksize.y;
 
-                            float x = (i % layer.width) * size.x;
-                            float y = (i / layer.width + 1) * size.y;
-
-                            Instantiate(CollisioBlock, new Vector3(x, y, 0), Quaternion.identity);
+                            Instantiate(CollisionBlock, new Vector3(x, -y, 0), Quaternion.identity);
                         }
                     }
                 }
-                else if (layer.name.Equals("Foreground")) // TODO Alterar paraos objetosdo Foreground
+                else if (layer.name.Equals("Foreground"))
                 {
+					GameObject fgSprite;
+					SpriteRenderer fgRenderer;
+
                     for (int i = 0; i < layer.width * layer.height; i++)
                     {
-                        if (layer.data[i] == 2) // If is a Foreground Tile
+                        if (layer.data[i] >= 2) // If is a Foreground Tile
                         {
-                            var size = ((BoxCollider2D)CollisioBlock.collider2D).size;
+							x = (i % layer.width) * blocksize.x;
+							y = (i / layer.width) * blocksize.y;
 
-                            float x = (i % layer.width) * size.x;
-                            float y = (i / layer.width + 1) * size.y;
-
-                            Instantiate(CollisioBlock, new Vector3(x, y, 0.1f), Quaternion.identity);
+							fgSprite = (GameObject) Instantiate(ForeGroundSprite, new Vector3(x, -y, -3f), Quaternion.identity);
+							fgRenderer = fgSprite.GetComponent<SpriteRenderer>();
+							fgRenderer.sprite = allSprites[layer.data[i]-1];
                         }
                     }
                 }
             }
-                    // For Objects Layers
-            else if (layer.type.Equals("objectgroup"))
+			else if (layer.type.Equals("objectgroup"))// For Objects Layers
             {
                 if (layer.name.Equals("Objects"))
-                {
+				{
+					SwitchRelationObject[] switches = new SwitchRelationObject[10];
+					GameObject switchObj;
+
+					int switchCount = 0;
+
                     foreach (var obj in layer.objects)
                     {
-                        if (obj.name.Equals("Player"))
+                        switch(obj.type)
                         {
-                            var blocksize = ((BoxCollider2D) CollisioBlock.collider2D).size;
-                            var size = Player.GetComponent<BoxCollider2D>().size;
-
-                            float x = obj.x / 32 * blocksize.x;
-                            float y = obj.y / 32 * blocksize.y;
-
-                            Debug.Log(x);
-                            Debug.Log(y);
-
-                            Instantiate(Player, new Vector3(x + 1.25f, y, 0), Quaternion.identity);
+							case "player":
+	                            x = obj.x / 32 * blocksize.x;
+                            	y = obj.y / 32 * blocksize.y;
+								
+                            	Instantiate(Player, new Vector3(x + 1.25f, -y-0.625f, 0), Quaternion.identity);
+								break;
+							case "end":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+								Instantiate(End, new Vector3(x, -y, 0), Quaternion.identity);
+								break;
+							case "crate big":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+								Instantiate(CrateBig, new Vector3(x, -y, 0), Quaternion.identity);
+								break;
+							case "crate small":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+								Instantiate(CrateSmall, new Vector3(x, -y, 0), Quaternion.identity);
+							break;
+							case "button":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+//								switches[switches.Length] = (GameObject) Instantiate(Switch, new Vector3(x, -y, 0), Quaternion.identity);
+								switchObj = (GameObject) Instantiate(Switch, new Vector3(x, -y, 0), Quaternion.identity);
+								switches[switchCount] = new SwitchRelationObject();
+								switches[switchCount].objSwitch = switchObj;
+								switches[switchCount].targets = obj.name.Split(',');
+								switchCount++;
+							break;
+							case "alcapao":
+								x = obj.x / 32 * blocksize.x;
+								y = obj.y / 32 * blocksize.y;
+								
+								switchObj = (GameObject) Instantiate(TrapDoor, new Vector3(x, -y, 0), Quaternion.identity);
+								switchObj.name = obj.name;
+								break;
+							default:
+								Debug.Log("Ainda nao tem implementado objeto do tipo: " + obj.type);
+								break;
                         }
                     }
+					
+					foreach (SwitchRelationObject g in switches)
+					{
+						if(g == null) continue;
+
+						int switchTargetIndex = 0;
+						int targetNameIndex = 1;
+						
+						for (int i = 0; i < g.targets.Length-1; i++)
+						{
+							Switch _s = g.objSwitch.GetComponent<Switch>();
+							_s.targets[0] = GameObject.Find(g.targets[1]);
+							switchTargetIndex++;
+							targetNameIndex++;
+						}
+					}
                 }
             }
         }
-    }
-
-    void Start()
-    {
-        Load("intro.json");
     }
 }

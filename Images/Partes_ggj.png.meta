@@ -1,0 +1,855 @@
+fileFormatVersion: 2
+guid: 234798985cdd04b408a279937ddf0131
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Partes_ggj_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_11
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_35
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_39
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_40
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_41
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_46
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_47
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_59
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_61
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_62
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_63
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_64
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_69
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_70
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_71
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_74
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_75
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_76
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_77
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_81
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_82
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_83
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_85
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_87
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_88
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+    - name: Partes_ggj_89
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 1
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
