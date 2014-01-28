@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelLoader.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MapMasterScript.cs" Line="72" Column="26" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="49" Column="11" />
+      <File FileName="Assets\Scripts\LevelLoader.cs" Line="19" Column="3" />
+      <File FileName="Assets\Sample Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="85" Column="3" />
+      <File FileName="Assets\Scripts\PlayWinIntro.cs" Line="11" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Sample Assets" expanded="True">
+              <Node name="2D" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Scripts" expanded="True">
+              <Node name="LevelLoader.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
